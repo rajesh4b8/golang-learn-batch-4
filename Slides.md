@@ -62,3 +62,52 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
   - `go install` - To install a go library / tool
   - `go get` - To get a package to our system
   - `go test` - To run the unit tests
+
+## Day 3
+
+### Buit in types
+
+- bool, string
+- int int8 int16 int32 int64
+- uint uint8 uint16 uint32 uint64 uintptr
+- byte // alias for uint8
+- rune // alias for int32
+- float32 float64
+- complex64 complex128
+
+### Variables
+
+- `var` is the keyword
+- Varibles can be decaled once
+- make sure to use `:=` to declare and initalize
+- Go is a strictly typed lang -> you can't change the type once declared
+
+### Zero values
+
+- Variables declared without an explicit initial value are given their zero value.
+- `0` for numeric types,
+- `false` for the boolean type
+- `""` (the empty string) for strings
+
+| Type          | Zero Value  |
+| -----------   | ----------- |
+| Integer       | 0           |
+| Floating point| 0.0         |
+| Boolean       | false       |
+| String        | ""          |
+| Pointer       | nil         |
+| Interface     | nil         |
+| Slice         | nil         |
+| Map           | nil         |
+| Channel       | nil         |
+| Function      | nil         |
+
+### Constants
+
+- used with `const` keyword
+- It's even if a const is declared and not used
+
+### Functions
+
+- Created  a simple function
+- Function with params
