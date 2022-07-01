@@ -107,7 +107,33 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 - used with `const` keyword
 - It's even if a const is declared and not used
 
+## Day 4
+
+### Type conversions
+
+- For converting compatible types you just use `new_type(old_value)`
+
 ### Functions
 
-- Created  a simple function
-- Function with params
+- Go supports first class functions
+- different ways of creating and using the functions in examples
+
+### Use Case Playing cards
+
+- Deck of cards functionality
+  - New Deck
+  - Print Deck
+  - Shuffle
+  - Deal
+  - Save to file
+  - Read from file
+
+### Assignement 1
+
+- Return a new deck of cards with suits and numbers
+
+## Day 5
+
+### Slices / Arrays
+
+### Flow control statements
