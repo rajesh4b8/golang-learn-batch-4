@@ -136,4 +136,17 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 
 ### Slices / Arrays
 
+- Array is a data structure to maintain a list of similar types
+- Length is fixed for arrays in Go
+- Index starts from 0
+- how to create an array?
+- Slices are reference data types which points to underlying array
+- Array is a value data type
+- Slice is Reference data type
+
 ### Flow control statements
+
+## Day 6
+
+### Functions / Methods
+
