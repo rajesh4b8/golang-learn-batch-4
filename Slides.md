@@ -146,7 +146,27 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 
 ### Flow control statements
 
+- if / else
+- for
+- switch
+- defer
+- blank reference?
+
 ## Day 6
+
+### Use Case cont
+
+- deal func
+- save to file
+- assignment for read from file
+
+### Structs
+
+- What is Struct?
+- Definining struct
+- Declaration / Initialization
+- Embdedded structs
+- Reciver functions / methods
 
 ### Functions / Methods
 

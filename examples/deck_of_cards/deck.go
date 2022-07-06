@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"os"
+	"strings"
+)
 
 type deck []string
+
+// definition of struct for deck
+type deck1 struct {
+	suit   string
+	number int
+}
 
 func createNewDeck() deck {
 	// newDeck := deck{"Ace of Spades", "Two of Diamonds"}
@@ -24,6 +35,11 @@ func createNewDeck() deck {
 	return newDeck
 }
 
+// java world -> static method
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
+
 // print is method on deck
 // d is a receiver type
 func (d deck) print() {
@@ -41,4 +57,13 @@ func (d deck) shuffle() {
 
 	// find a random number between 0 and 15
 	// switch for each element
+}
+
+func (d deck) writeToFile(fileName string) {
+	str := strings.Join(d, ",")
+	err := ioutil.WriteFile(fileName, []byte(str), 0666)
+	if err != nil {
+		fmt.Println("Error saving the file: ", fileName, err.Error())
+		os.Exit(1)
+	}
 }
