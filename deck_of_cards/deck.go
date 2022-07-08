@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"math/rand"
 	"os"
 	"strings"
+	"time"
 )
 
 type deck []string
@@ -15,6 +17,7 @@ type deck1 struct {
 	number int
 }
 
+// to create a new deck from suits and numbers
 func createNewDeck() deck {
 	// newDeck := deck{"Ace of Spades", "Two of Diamonds"}
 	// newDeck = append(newDeck, "Three of Clubs")
@@ -23,7 +26,7 @@ func createNewDeck() deck {
 	// Return a new deck of cards from all suits (Spades, Diamonds, Clubs, Hearts)
 	// and numbers (Ace, two, three, four)
 	suits := []string{"Spades", "Diamonds", "Clubs", "Hearts"}
-	numbers := []string{"Ace", "two", "three", "four"}
+	numbers := []string{"Ace", "Two", "Three", "Four"}
 
 	newDeck := []string{}
 	for _, suit := range suits {
@@ -50,13 +53,17 @@ func (d deck) print() {
 }
 
 func (d deck) shuffle() {
-	// TODO Assignment
+	// TODO Assignment 2
 
 	// how to switch values?
-	d[0], d[15] = d[15], d[0]
+	// d[0], d[15] = d[15], d[0]
 
-	// find a random number between 0 and 15
-	// switch for each element
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+
+	for i := range d {
+		newPosition := r.Intn(len(d) - 1) // random value between 0 and 15
+		d[i], d[newPosition] = d[newPosition], d[i]
+	}
 }
 
 func (d deck) writeToFile(fileName string) {
@@ -66,4 +73,18 @@ func (d deck) writeToFile(fileName string) {
 		fmt.Println("Error saving the file: ", fileName, err.Error())
 		os.Exit(1)
 	}
+}
+
+func readFromFile(fileName string) deck {
+	content, err := ioutil.ReadFile(fileName)
+	if err != nil {
+		fmt.Println("Error while reading the file", err.Error())
+		os.Exit(1)
+	}
+
+	// if reach here means, no error
+	str := string(content)
+	sliceCards := strings.Split(str, ",")
+
+	return deck(sliceCards)
 }

@@ -1,16 +1,17 @@
 package main
 
 func main() {
-	newDeck := createNewDeck()
+	// newDeck := createNewDeck()
 	// printDeck(newDeck)
 	// newDeck.print()
 
-	newDeck.shuffle()
+	// newDeck.shuffle()
 
-	newDeck.writeToFile("myDeck.txt")
+	// newDeck.writeToFile("myDeck.txt")
 
-	// TODO Assignment
-	// newDeckFromFile := readFromFile("myDeck.txt")
+	// TODO Assignment 3
+	newDeckFromFile := readFromFile("myDeck.txt")
+	newDeckFromFile.print()
 
 	// newDeck.print()
 

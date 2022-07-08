@@ -152,9 +152,13 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 - defer
 - blank reference?
 
+### Assignement 2
+
+- Complete the shuffle function for deck of cards
+
 ## Day 6
 
-### Use Case cont
+### Use Case cont1
 
 - deal func
 - save to file
@@ -170,3 +174,39 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 
 ### Functions / Methods
 
+### Assignement 3
+
+- Read the deck of cards from file
+
+Day ## 7
+
+### Use Case cont2
+
+- Shuffle
+- Read from file
+
+### Pointers
+
+- USe `&` to access the pointer (address)
+- USe `*` to access the value from pointer
+- `*` in front for a type to indicate it's a pointer type
+- Pointer indirection
+
+### Value Types / Reference Types
+
+| Value Type       | Referece Type |
+| ---------------- | ------------- |
+| int              | slices        |
+| float            | maps          |
+| string           | channels      |
+| bool             | pointers      |
+| structs          | functions     |
+| arrays           |      |
+
+### Basics of go testing
+
+- Unit testing -> to test a piece of code be it a method or a function
+
+### Assignement 4
+
+- Write some unit tests when writing a file and reading file
