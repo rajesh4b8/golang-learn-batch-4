@@ -178,7 +178,7 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 
 - Read the deck of cards from file
 
-Day ## 7
+## Day 7
 
 ### Use Case cont2
 
@@ -187,8 +187,8 @@ Day ## 7
 
 ### Pointers
 
-- USe `&` to access the pointer (address)
-- USe `*` to access the value from pointer
+- Use `&` to access the pointer (address)
+- Use `*` to access the value from pointer
 - `*` in front for a type to indicate it's a pointer type
 - Pointer indirection
 
@@ -210,3 +210,47 @@ Day ## 7
 ### Assignement 4
 
 - Write some unit tests when writing a file and reading file
+
+## Day 8
+
+### Empty Struts
+
+- Empty structs take 0 memory
+- Empty structs always points to the same location (address)
+- Useful to define methods for a service
+
+### Mpas
+
+- All the keys should be of same type
+- All the values should be of same type
+- Map Vs Structs
+
+| Map                 | Struct               |
+|-------------------- |----------------------|
+| All keys - same type| different types      |
+| related properties  | represent something    |
+| All values - same type|can be different |
+| keys - can be added | Define them at compile time |
+| keys are indexed   | keys not indexed |
+| Reference Type     | Value Type |
+
+### make vs new
+
+- The new built-in function allocates memory, the value returned is a pointer to a newly allocated zero value of that type.
+- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
+
+### Assignment 5
+
+- Print numbers from 1 to 10 and print whether it's even or odd
+- Sample output
+
+``` text
+1 - odd
+2 - even
+3 - odd
+4 - even
+...
+```
+
+### Interfaces
+
