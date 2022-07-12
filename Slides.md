@@ -252,5 +252,25 @@ https://about.gitlab.com/images/press/git-cheat-sheet.pdf
 ...
 ```
 
+## Day 9
+
+- Map beceomes a Set when value is an empty Struct
+
 ### Interfaces
 
+- What is the interface in OOP?
+An interface defines the behavior of an object. It only specifies what the object is supposed to do. It is actually a concept of abstraction and encapsulation
+- To implment an interface
+  - No need to explicitly mention that it implements
+  - No `impliments` or `extends` keywords need to say the struct implment any interface
+- If you define an interface in the file... All the structs in the file automatically be the members of that interface
+  - So you must honor and impliment all the methods in that interface to use that struct as interface
+- Check the example for interfaces
+
+### Assignment 6
+
+- Add a incomestream type `RentalIncome` to `.\examples\interfaces\main.go`
+  - Rental income will have
+    - Property Name
+    - Monthly rent
+    - No of months

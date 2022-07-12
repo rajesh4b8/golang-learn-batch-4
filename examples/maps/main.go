@@ -22,6 +22,13 @@ func main() {
 
 	// compilation error -> It has to be same type of map
 	// printMap(shapes)
+
+	m1 := make(map[string]struct{})
+	m1["One"] = struct{}{}
+	m1["Two"] = struct{}{}
+	m1["Two"] = struct{}{}
+
+	fmt.Println(m1)
 }
 
 func updateColor(c map[string]string) {
