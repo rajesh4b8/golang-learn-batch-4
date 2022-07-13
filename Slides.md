@@ -274,3 +274,7 @@ An interface defines the behavior of an object. It only specifies what the objec
     - Property Name
     - Monthly rent
     - No of months
+
+## Day 10
+
+### Channels
