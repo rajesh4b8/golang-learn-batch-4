@@ -278,3 +278,29 @@ An interface defines the behavior of an object. It only specifies what the objec
 ## Day 10
 
 ### Channels
+
+- Channels are a typed conduit through which you can send and receive values with the channel operator `<-`
+- `ch <- v`    // Send v to channel ch
+- `v := <-ch`  // Receive from ch, and assign value to v
+- Channels are created for a single type
+- non-buffered channels
+  - 0 capcity
+  - used for synchronous communication
+  - You should have some goRoutine ready to recieve the data
+- Buffered channels
+  - capacity is defined
+  - error when you try to push to channel which is full
+  - async communication
+
+### Select / Switch
+
+- Switch -> only executes the first matching case
+- Select
+  - It is only used for Channels
+  - It checks for multiple macthing cases
+  - If more than one is true then it will choose random
+
+### Assignment 7
+
+- Use `select` to print the fibnocci series
+- Should use a secondary channel as quit signal

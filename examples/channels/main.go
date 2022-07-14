@@ -19,7 +19,7 @@ func main() {
 		"http://google.com",
 	}
 
-	c := make(chan string)
+	c := make(chan string) // non buffered channel -> no capacity to store the data
 
 	for _, link := range links {
 		go checkHealth(link, c)
