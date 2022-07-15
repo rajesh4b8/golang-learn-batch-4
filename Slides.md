@@ -299,8 +299,36 @@ An interface defines the behavior of an object. It only specifies what the objec
   - It is only used for Channels
   - It checks for multiple macthing cases
   - If more than one is true then it will choose random
+  - It can be used to write to channel as well
 
 ### Assignment 7
 
 - Use `select` to print the fibnocci series
 - Should use a secondary channel as quit signal
+
+## Day 11
+
+### GOPATH / GOROOT
+
+- GOROOT is a variable that defines where your Go SDK is located. You do not need to change this variable, unless you plan to use different Go versions.
+- GOPATH is a variable that defines the root of your workspace. By default, the workspace directory is a directory that is named go within your user home directory (~/go for Linux and MacOS, %USERPROFILE%/go for Windows). GOPATH stores your code base and all the files that are necessary for your development. You can use another directory as your workspace by configuring GOPATH for different scopes. GOPATH is the root of your workspace and contains the following folders:
+  - src/: location of Go source code (for example, .go, .c, .g, .s).
+  - pkg/: location of compiled package code (for example, .a).
+  - bin/: location of compiled executable programs built by Go.
+
+### GoLang workspace
+
+- Define you GOPATH
+- Be sure of your GOROOT
+- git@github.com:rajesh4b8/users-api-batch4.git
+
+### MVC Architecture
+
+- MVC is abbreviated as Model View Controller is a design pattern created for developing applications specifically web applications. As the name suggests, it has three major parts. The traditional software design pattern works in an "Input - Process - Output" pattern whereas MVC works as "Controller -Model - View" approach
+
+### Use Case - Users API
+
+- Create User
+- Read / List Users
+- Update User
+- Delete User
