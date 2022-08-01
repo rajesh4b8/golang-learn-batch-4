@@ -332,3 +332,33 @@ An interface defines the behavior of an object. It only specifies what the objec
 - Read / List Users
 - Update User
 - Delete User
+
+## Day - 13
+
+### RESTFul web services
+
+- To communicate over web with http protocol
+- Different http methods
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+
+### Modules
+
+- GOROOT -> Where Go is installed (default for windows: `C:\Program Files\Go`)
+- GOPATH -> Where your go workspace is defined (Default for windows: `C:\Users\<user>\Go`)
+- All the modules being used will be downloded to GOPATH
+- Go Modules introduced in Go 1.13
+- If you define go modules to the package you nolonger need to put your repository in GOPATH
+- Modules are how Go manages dependencies.
+- A module is a collection of packages that are released, versioned, and distributed together. Modules may be downloaded directly from version control repositories or from module proxy servers.
+
+## Day - 19
+
+### Go-kit
+
+- https://gokit.io/faq/#what-is-go-kit
+- example
+
